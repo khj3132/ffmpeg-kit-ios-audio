@@ -13,18 +13,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.preserve_paths = '**/*.xcframework'
-
-  s.vendored_frameworks = [
-    'ffmpegkit.xcframework',
-    'libavcodec.xcframework',
-    'libavdevice.xcframework',
-    'libavfilter.xcframework',
-    'libavformat.xcframework',
-    'libavutil.xcframework',
-    'libswresample.xcframework',
-    'libswscale.xcframework'
-  ]
-
+  s.vendored_frameworks = 'frameworks/*.xcframework'
   s.libraries = 'c++'
-  s.frameworks = 'AVFoundation', 'CoreMedia', 'CoreVideo', 'VideoToolbox'
 end
