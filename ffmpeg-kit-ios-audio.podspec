@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.preserve_paths = '**/*.xcframework'
-  s.vendored_frameworks = 'frameworks/*.xcframework'
+  s.vendored_frameworks = '*.xcframework'
   s.libraries = 'c++'
 end
